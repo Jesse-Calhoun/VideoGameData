@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
 @Transactional
@@ -23,8 +24,8 @@ public class VideoGameService {
         return videoGameRepository.findAll().stream().toList();
     }
 
-    public <VideoGame> GetById(int id){
-        return videoGameRepository.findAll().stream().filter(game -> game.getId()==id).collect();
+    public VideoGame GetById(Integer id){
+        return videoGameRepository.findById(id).orElseThrow(EntityNotFoundException::new);
     }
 
 
