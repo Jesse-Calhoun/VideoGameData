@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import GameSalesChart from '../../Components/GameSalesChart/GameSalesChart';
 import SearchBar from '../../Components/SearchBar/SearchBar';
+import EvaluationChart from '../../Components/EvaluationChart/EvaluationChart';
 
 
 const SearchPage = () => {
@@ -23,6 +24,7 @@ const SearchPage = () => {
     return ( 
         <div >
             <GameSalesChart games={games} />
+            <EvaluationChart games={games}/>
             <SearchBar />
         </div>
      );

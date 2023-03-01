@@ -28,7 +28,7 @@ const GameSalesChart = ({games}) => {
 
         let platformArrays = distinctPlatforms.map(platform => {
             
-            let allGamesForThisPlatform = filteredGames.filter(game => game.platform == platform);
+            let allGamesForThisPlatform = filteredGames.filter(game => game.platform === platform);
             // console.log(allGamesForThisPlatform)
 
             let sum = 0;
@@ -59,7 +59,7 @@ const GameSalesChart = ({games}) => {
 
     return (
         <div>
-            <h1>Platforms By Global Sales in Millions</h1>
+            <h3>Platforms By Global Sales in Millions</h3>
             <Chart chartType="ColumnChart" width="100%" height="400px" data={generateDataFormChart()}  />
         </div>
         // <Chart
