@@ -37,7 +37,7 @@ const EvaluationChart = ({ games }) => {
     }
     return ( 
         <div>
-            <h3>What was the gaming industry like in the early 2000's(2000-2010)?</h3>
+            <h3>What was the gaming market like in the early 2000's(2000-2010)?</h3>
             <Chart chartType="ColumnChart" width="100%" height="400px" data={generateDataFormChart()}  />
         </div>
     );
