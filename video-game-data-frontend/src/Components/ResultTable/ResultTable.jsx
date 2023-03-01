@@ -12,6 +12,8 @@ const ResultTable = ({filteredGames}) => {
             <thead>
                 <tr >
                     <th>Game Name</th>
+                    <th>Publisher</th>
+                    <th>Platform</th>
                     {/* <th>Game Detail Page</th> */}
                     {/* <th>Platform</th>
                     <th>Publisher</th>

@@ -11,12 +11,8 @@ const ResultRow = ({ game }) => {
     return ( 
         <tr key={game.id} onClick={handleClick}>
             <td>{game.name}</td>
-            {/* <td></td> */}
-            {/* <td>
-            <button onClick={handleCLick(game)}>
-              Go to Game Page
-            </button>
-            </td> */}
+            <td>{game.publisher}</td>
+            <td>{game.platform}</td>
         </tr>
      );
 }
