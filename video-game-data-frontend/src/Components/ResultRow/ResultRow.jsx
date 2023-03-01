@@ -13,6 +13,7 @@ const ResultRow = ({ game }) => {
             <td>{game.name}</td>
             <td>{game.publisher}</td>
             <td>{game.platform}</td>
+            <td>{game.game_rank}</td>
         </tr>
      );
 }
