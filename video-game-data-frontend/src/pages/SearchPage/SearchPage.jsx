@@ -6,7 +6,8 @@ import EvaluationChart from '../../Components/EvaluationChart/EvaluationChart';
 
 
 const SearchPage = () => {
-    const [games, setGames] = useState([{}])
+    const [games, setGames] = useState([])
+    const [filteredGames, setFilteredGames] = useState([])
 
     useEffect(() => {
       getAllGames()
@@ -25,7 +26,7 @@ const SearchPage = () => {
         <div >
             <GameSalesChart games={games} />
             <EvaluationChart games={games}/>
-            <SearchBar />
+            <SearchBar games={games} setFilteredGames={setFilteredGames} filteredGames={filteredGames} />
         </div>
      );
 }

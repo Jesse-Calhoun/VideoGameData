@@ -37,7 +37,7 @@ const GameSalesChart = ({games}) => {
                 // if (allGamesForPlatform[i].platform == platform)
             }
             // let globalSalesForPlatform = allGamesForPlatform.map(game => sum += game.globalsales)
-            console.log(sum)
+            // console.log(sum)
 
             return [platform, sum, "green"]
         })
