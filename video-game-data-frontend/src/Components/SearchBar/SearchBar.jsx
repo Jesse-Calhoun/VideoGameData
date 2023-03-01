@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
+import ResultTable from "../ResultTable/ResultTable";
 
 const SearchBar = ({ games, setFilteredGames, filteredGames }) => {
     const [searchTerm, setSearchTerm] = useState('')
-    const [results, setResults] = useState([])
-
+    // const [results, setResults] = useState([])
+    const [selectedGame, setSelectedGame] = useState({})
     
 
     function handleSearch(event){
@@ -14,44 +16,51 @@ const SearchBar = ({ games, setFilteredGames, filteredGames }) => {
         setSearchTerm('')
     }
 
-    let resultRow = filteredGames.map((game) => {
-        return (
-            <div>
-                <tr key={game.id}>
-                  <td>{game.name}</td>
-                  <td>
-                    <button >
-                      See Details
-                    </button>
-                  </td>
-                </tr>
-            </div>
-        )
-    })
+    // const navigate = useNavigate()
+
+    // function handleCLick(game){
+    //     setSelectedGame(game)
+    //     navigate(`game/${selectedGame.id}`)
+    // }
+
+    // let resultRow = filteredGames.map((game) => {
+    //     return (
+    //         <tr key={game.id} onClick={handleCLick(game)}>
+    //             <td>{game.name}</td>
+    //             <td></td>
+    //             {/* <td>
+    //             <button onClick={handleCLick(game)}>
+    //               Go to Game Page
+    //             </button>
+    //           </td> */}
+    //         </tr>
+    //     )
+    // })
 
 
     return ( 
         <div>
             <form onSubmit={handleSearch}>
-                <input type="search" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)}/>
+                <input type="search" placeholder="Search Game Name" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)}/>
                 <button type="submit">Search</button>
             </form>
-            <div>
-                <table className="table">
+            <ResultTable filteredGames={filteredGames}  />
+            {/* <div> */}
+                {/* <table className="table">
                     <thead>
-                    <tr>
+                    <tr >
                         <th>Game Name</th>
-                        <th>Check Game Details</th>
+                        {/* <th>Game Detail Page</th> */}
                         {/* <th>Platform</th>
                         <th>Publisher</th>
                         <th>Year</th> */}
-                    </tr>
+                    {/* </tr>
                     </thead>
                     <tbody>
                         {resultRow}
-                    </tbody>
-                </table>
-            </div>
+                    </tbody> */}
+                {/* // </table> */} 
+             {/* </div> */}
         </div>
     );
 }
