@@ -4,7 +4,7 @@ import ResultTable from "../ResultTable/ResultTable";
 const SearchBar = ({ games, setFilteredGames, filteredGames }) => {
     const [searchTerm, setSearchTerm] = useState('')
     // const [results, setResults] = useState([])
-    const [selectedGame, setSelectedGame] = useState({})
+    // const [selectedGame, setSelectedGame] = useState({})
     
 
     function handleSearch(event){

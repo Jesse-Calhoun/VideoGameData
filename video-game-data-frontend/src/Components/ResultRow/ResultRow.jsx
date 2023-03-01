@@ -1,6 +1,15 @@
+import { useNavigate } from "react-router";
+
 const ResultRow = ({ game }) => {
+    const navigate = useNavigate()
+
+
+    function handleClick(){
+        navigate(`/game/${game.id}`)
+    }
+
     return ( 
-        <tr key={game.id} >
+        <tr key={game.id} onClick={handleClick}>
             <td>{game.name}</td>
             {/* <td></td> */}
             {/* <td>
