@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router";
 import ResultTable from "../ResultTable/ResultTable";
 
 const SearchBar = ({ games, setFilteredGames, filteredGames }) => {
@@ -16,26 +15,6 @@ const SearchBar = ({ games, setFilteredGames, filteredGames }) => {
         setSearchTerm('')
     }
 
-    // const navigate = useNavigate()
-
-    // function handleCLick(game){
-    //     setSelectedGame(game)
-    //     navigate(`game/${selectedGame.id}`)
-    // }
-
-    // let resultRow = filteredGames.map((game) => {
-    //     return (
-    //         <tr key={game.id} onClick={handleCLick(game)}>
-    //             <td>{game.name}</td>
-    //             <td></td>
-    //             {/* <td>
-    //             <button onClick={handleCLick(game)}>
-    //               Go to Game Page
-    //             </button>
-    //           </td> */}
-    //         </tr>
-    //     )
-    // })
 
 
     return ( 

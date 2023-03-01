@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router"
 import React from 'react';
 import Table from 'react-bootstrap/Table';
+import ResultRow from "../ResultRow/ResultRow";
 
 
 const ResultTable = ({filteredGames}) => {
@@ -11,19 +12,7 @@ const ResultTable = ({filteredGames}) => {
     //     navigate(`game/${selectedGame.id}`)
     // }
 
-    let resultRow = filteredGames.map((game) => {
-        return (
-            <tr key={game.id} >
-                <td>{game.name}</td>
-                {/* <td></td> */}
-                {/* <td>
-                <button onClick={handleCLick(game)}>
-                  Go to Game Page
-                </button>
-              </td> */}
-            </tr>
-        )
-    })
+    let resultRow = filteredGames.map((game) => <ResultRow game={game}/>)
     return (
         <Table variant="dark" hover >
             <thead>
