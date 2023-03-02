@@ -21,27 +21,12 @@ const SearchBar = ({ games, setFilteredGames, filteredGames }) => {
 
     return ( 
         <Container fluid>
+            <h4>Search for your desired game by name.</h4>
             <form onSubmit={handleSearch}>
                 <input type="search" placeholder="Search Game Name" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)}/>
                 <Button variant="success" type="submit">Search</Button>
             </form>
             <ResultTable filteredGames={filteredGames}  />
-            {/* <div> */}
-                {/* <table className="table">
-                    <thead>
-                    <tr >
-                        <th>Game Name</th>
-                        {/* <th>Game Detail Page</th> */}
-                        {/* <th>Platform</th>
-                        <th>Publisher</th>
-                        <th>Year</th> */}
-                    {/* </tr>
-                    </thead>
-                    <tbody>
-                        {resultRow}
-                    </tbody> */}
-                {/* // </table> */} 
-             {/* </div> */}
         </Container>
     );
 }

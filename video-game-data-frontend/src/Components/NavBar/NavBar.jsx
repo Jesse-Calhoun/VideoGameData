@@ -6,7 +6,7 @@ const NavBar = ({}) => {
     return ( 
         <Navbar fixed='top' sticky='top' className='bg' >
             <Container>
-                <Navbar.Brand href='/'>Home</Navbar.Brand>
+                <Navbar.Brand href='/' className='text-color'>Home</Navbar.Brand>
             </Container>
         </Navbar>
      );

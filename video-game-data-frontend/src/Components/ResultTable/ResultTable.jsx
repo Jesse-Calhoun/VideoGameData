@@ -8,7 +8,7 @@ const ResultTable = ({filteredGames}) => {
 
     let resultRow = filteredGames.map((game) => <ResultRow game={game}/>)
     return (
-        <Table variant="dark" hover bordered >
+        <Table bgcolor='#ffb404' hover bordered >
             <thead>
                 <tr >
                     <th>Game Name</th>
