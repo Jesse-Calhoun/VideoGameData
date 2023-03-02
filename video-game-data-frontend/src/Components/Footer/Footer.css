@@ -1,0 +1,9 @@
+.flex-container{
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 15px; */
+}
+
+.background-color{
+    background-color: lightgreen;
+}

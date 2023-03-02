@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ResultTable from "../ResultTable/ResultTable";
 import Container from 'react-bootstrap/Container'
+import Button from 'react-bootstrap/Button'
 
 const SearchBar = ({ games, setFilteredGames, filteredGames }) => {
     const [searchTerm, setSearchTerm] = useState('')
@@ -22,7 +23,7 @@ const SearchBar = ({ games, setFilteredGames, filteredGames }) => {
         <Container fluid>
             <form onSubmit={handleSearch}>
                 <input type="search" placeholder="Search Game Name" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)}/>
-                <button type="submit">Search</button>
+                <Button variant="success" type="submit">Search</Button>
             </form>
             <ResultTable filteredGames={filteredGames}  />
             {/* <div> */}

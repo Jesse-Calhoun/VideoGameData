@@ -22,7 +22,7 @@ const EvaluationChart = ({ games }) => {
                 sum += allGamesForThisPlatform[i].globalsales
             }
 
-            return [platform, sum, "lightgreen"]
+            return [platform, sum, "blue"]
         })
         
         const data = [

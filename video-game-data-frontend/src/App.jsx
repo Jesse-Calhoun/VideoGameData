@@ -6,6 +6,7 @@ import Footer from './Components/Footer/Footer';
 import NavBar from './Components/NavBar/NavBar';
 import SearchPage from './pages/SearchPage/SearchPage';
 import VideoGameDetailPage from './pages/VideoGameDetailPage/VideoGameDetailPage';
+import './App.css'
 
 function App() {
 

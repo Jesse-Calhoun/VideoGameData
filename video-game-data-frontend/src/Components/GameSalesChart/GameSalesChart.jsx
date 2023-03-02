@@ -24,7 +24,7 @@ const GameSalesChart = ({games}) => {
             for (let i = 0; i < allGamesForThisPlatform.length; i++){
                 sum += allGamesForThisPlatform[i].globalsales
             }
-            return [platform, sum, "green"]
+            return [platform, sum, "blue"]
         })
 
         const data = [

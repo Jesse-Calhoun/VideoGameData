@@ -1,6 +1,8 @@
+import './Footer.css'
+
 const Footer = () => {
     return ( 
-        <footer>
+        <footer className='flex-container'>
             <p>Copyright © 2022</p>{" "}
         </footer>
      );

@@ -1,9 +1,10 @@
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
+import './NavBar.css'
 
 const NavBar = ({}) => {
     return ( 
-        <Navbar fixed='top' bg='light' sticky='top' >
+        <Navbar fixed='top' sticky='top' className='bg' >
             <Container>
                 <Navbar.Brand href='/'>Home</Navbar.Brand>
             </Container>
