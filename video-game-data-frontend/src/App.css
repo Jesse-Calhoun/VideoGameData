@@ -1,3 +1,8 @@
 .App{
-    background-color: #2b4871;
+    /* background-color: slategrey; */
+    color: #ffb404;
+    background-color: slategrey;
+    margin-bottom: 40px !important;
+    height: 100vh;
+    overflow-y: scroll;
 }
