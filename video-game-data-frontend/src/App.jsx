@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 // import GameSalesChart from './Components/GameSalesChart/GameSalesChart';
 import { Route, Routes } from 'react-router';
 import Footer from './Components/Footer/Footer';
+import NavBar from './Components/NavBar/NavBar';
 import SearchPage from './pages/SearchPage/SearchPage';
 import VideoGameDetailPage from './pages/VideoGameDetailPage/VideoGameDetailPage';
 
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar/>
       <Routes>
         <Route path='/' element={<SearchPage/>}/>
         <Route path='/game/:gameId' element={<VideoGameDetailPage/>}/>

@@ -24,7 +24,7 @@ const SearchPage = () => {
       }
     }
     return ( 
-        <div className='background' >
+        <div id='home' className='background' >
             <GameSalesChart games={games} />
             <EvaluationChart games={games}/>
             <SearchBar games={games} setFilteredGames={setFilteredGames} filteredGames={filteredGames} />
