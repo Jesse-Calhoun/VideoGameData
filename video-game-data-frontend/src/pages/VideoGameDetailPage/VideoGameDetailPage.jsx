@@ -13,6 +13,7 @@ const VideoGameDetailPage = ({}) => {
 
     useEffect(() => {
         fetchGame();
+        window.scrollTo(0,0)
     }, [gameId])
 
     console.log(game)

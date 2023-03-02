@@ -3,6 +3,7 @@ import axios from 'axios';
 import GameSalesChart from '../../Components/GameSalesChart/GameSalesChart';
 import SearchBar from '../../Components/SearchBar/SearchBar';
 import EvaluationChart from '../../Components/EvaluationChart/EvaluationChart';
+import './SearchPage.css'
 
 
 const SearchPage = () => {
@@ -23,7 +24,7 @@ const SearchPage = () => {
       }
     }
     return ( 
-        <div >
+        <div className='background' >
             <GameSalesChart games={games} />
             <EvaluationChart games={games}/>
             <SearchBar games={games} setFilteredGames={setFilteredGames} filteredGames={filteredGames} />

@@ -1,4 +1,6 @@
 import Chart from "react-google-charts";
+import React from 'react';
+import Container from 'react-bootstrap/Container'
 
 const EvaluationChart = ({ games }) => {
 
@@ -32,11 +34,11 @@ const EvaluationChart = ({ games }) => {
         return data;
     }
     return ( 
-        <div>
+        <Container>
             <h2>What was the gaming market for each platform's , to have a game released in the early 2000's(2000-2010), global sales?(In Millions)</h2>
             {/* Has more platforms many with few games to their nam, showing the ending of some platforms. */}
             <Chart chartType="ColumnChart" width="100%" height="400px" data={generateDataForChart()}  />
-        </div>
+        </Container>
     );
 }
  

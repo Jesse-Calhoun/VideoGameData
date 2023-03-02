@@ -1,5 +1,6 @@
-// import { useEffect, useState } from "react";
+import React from "react";
 import Chart from "react-google-charts";
+import Container from 'react-bootstrap/Container'
 
 
 const GameSalesChart = ({games}) => {
@@ -36,10 +37,10 @@ const GameSalesChart = ({games}) => {
 
 
     return (
-        <div>
+        <Container>
             <h3>What is the gaming market for each platform's, having released a game since 2013, global sales?(In Millions)</h3>
             <Chart chartType="ColumnChart" width="100%" height="400px" data={generateDataFormChart()}  />
-        </div>
+        </Container>
     );
 }
  

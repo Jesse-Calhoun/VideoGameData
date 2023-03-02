@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router";
+import React from 'react';
+
 
 const ResultRow = ({ game }) => {
     const navigate = useNavigate()
