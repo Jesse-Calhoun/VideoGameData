@@ -25,9 +25,9 @@ const SearchPage = () => {
     }
     return ( 
         <div id='home' className='background' >
+            <SearchBar games={games} setFilteredGames={setFilteredGames} filteredGames={filteredGames} />
             <GameSalesChart games={games} />
             <EvaluationChart games={games}/>
-            <SearchBar games={games} setFilteredGames={setFilteredGames} filteredGames={filteredGames} />
         </div>
      );
 }
